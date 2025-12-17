@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- MyFairClaim Professional Tools - Insurance Dispute Guide v1.0.0 | Last Updated: 2024-12-17 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyFairClaim Professional Insurance Dispute Guide - File DOI complaints and small claims with 50-state database and document generators">
+    <meta property="og:title" content="Insurance Dispute Guide - MyFairClaim Professional">
+    <meta property="og:description" content="When negotiation fails, escalation prevails. DOI complaints and small claims guidance for all 50 states.">
+    <meta property="og:image" content="https://myfairclaim.github.io/logo.png">
+    <link rel="icon" type="image/png" href="https://myfairclaim.github.io/logo.png">
+    <link rel="apple-touch-icon" href="https://myfairclaim.github.io/logo.png">
+    <link rel="canonical" href="https://YOUR-USERNAME.github.io/Insurance%20Dispute%20Guide.html">
+    <title>Insurance Dispute Guide - MyFairClaim Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Analytics - Replace G-XXXXXXXXXX with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "MyFairClaim",
+      "description": "Professional diminished value claims service helping vehicle accident victims recover compensation for lost vehicle value",
+      "url": "https://myfairclaim.com",
+      "telephone": "+1-877-503-3247",
+      "email": "support@myfairclaim.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "PO Box 125",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "postalCode": "85257",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "33.4942",
+        "longitude": "-111.9261"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "priceRange": "$49.99 - $249.99"
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #1e293b; background: #f8fafc; }
+        .tier-banner { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: white; padding: 10px 40px; font-size: 11px; font-weight: 800; letter-spacing: 2px; text-align: center; border-bottom: 3px solid #60a5fa; }
+        .header { background: white; padding: 20px 40px 15px; border-bottom: 1px solid #e2e8f0; }
+        .header-content { max-width: 1200px; margin: 0 auto; }
+        .logo { width: 220px; max-width: 70%; height: auto; margin-bottom: 8px; display: block; }
+        .header h1 { font-size: 2.2em; margin-bottom: 6px; font-weight: 900; letter-spacing: -0.5px; color: #1e293b; }
+        .header .tagline { font-size: 0.95em; font-style: italic; font-weight: 400; color: #64748b; }
+        .feature-badges { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+        .feature-badge { background: #eff6ff; color: #1e40af; padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 600; border: 1px solid #bfdbfe; }
+        .tabs { display: flex; background: #e8edf2; border-bottom: 3px solid #3b82f6; max-width: 1200px; margin: 0 auto; overflow-x: auto; }
+        .tab { flex: 1; min-width: 140px; padding: 16px 20px; background: none; border: none; border-right: 1px solid #cbd5e1; cursor: pointer; font-size: 14px; font-weight: 600; color: #475569; transition: all 0.2s; text-align: center; font-family: 'Inter', sans-serif; }
+        .tab:last-child { border-right: none; }
+        .tab:hover { background: #dbeafe; color: #1e40af; }
+        .tab.active { background: white; color: #1e40af; border-bottom: 3px solid #3b82f6; margin-bottom: -3px; }
+        .tab-content { display: none; padding: 40px; max-width: 1200px; margin: 0 auto; }
+        .tab-content.active { display: block; }
+        .section-header { font-size: 2em; font-weight: 700; color: #1e293b; margin-bottom: 12px; }
+        .section-subheader { font-size: 1.05em; color: #64748b; margin-bottom: 30px; }
+        .strategy-box { background: white; border: 2px solid #e2e8f0; border-left: 6px solid #3b82f6; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+        .strategy-title { font-size: 1.3em; font-weight: 700; color: #1e40af; margin-bottom: 12px; }
+        .strategy-content { color: #475569; line-height: 1.8; }
+        .strategy-content ul { margin-left: 24px; margin-top: 12px; }
+        .strategy-content li { margin-bottom: 8px; }
+        .state-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 30px; }
+        .state-card { background: white; border: 2px solid #e2e8f0; border-radius: 10px; padding: 20px; cursor: pointer; transition: all 0.2s; }
+        .state-card:hover { border-color: #3b82f6; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2); transform: translateY(-2px); }
+        .state-card.selected { border-color: #3b82f6; border-width: 3px; background: #eff6ff; }
+        .state-name { font-size: 1.2em; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+        .state-agency { font-size: 0.9em; color: #64748b; font-weight: 600; margin-bottom: 12px; }
+        .state-details { font-size: 0.85em; color: #475569; line-height: 1.6; }
+        .state-details strong { color: #1e40af; display: block; margin-top: 8px; margin-bottom: 4px; }
+        .search-box { width: 100%; padding: 14px 20px; border: 2px solid #cbd5e1; border-radius: 8px; font-size: 16px; margin-bottom: 24px; font-family: 'Inter', sans-serif; }
+        .search-box:focus { outline: none; border-color: #3b82f6; }
+        .info-section { display: none; background: white; border: 3px solid #3b82f6; border-radius: 12px; padding: 32px; margin-top: 30px; }
+        .info-section.active { display: block; }
+        .form-section { background: white; border: 2px solid #e2e8f0; border-radius: 12px; padding: 28px; margin-bottom: 28px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; color: #334155; margin-bottom: 8px; font-size: 0.95em; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 2px solid #cbd5e1; border-radius: 6px; font-size: 15px; font-family: 'Inter', sans-serif; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #3b82f6; }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .output-area { background: #f8fafc; border: 2px solid #cbd5e1; border-radius: 8px; padding: 28px; margin: 24px 0; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.8; white-space: pre-wrap; max-height: 600px; overflow-y: auto; color: #1e293b; }
+        .btn { padding: 14px 28px; border: none; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+        .btn-primary { background: #3b82f6; color: white; }
+        .btn-primary:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3); }
+        .btn-secondary { background: #64748b; color: white; margin-right: 10px; margin-bottom: 10px; }
+        .btn-secondary:hover { background: #475569; }
+        .alert { padding: 16px 20px; border-radius: 8px; margin-bottom: 24px; border-left: 4px solid; }
+        .alert-info { background: #eff6ff; border-color: #3b82f6; color: #1e40af; }
+        .alert-warning { background: #fef3c7; border-color: #f59e0b; color: #92400e; }
+        .alert-success { background: #ecfdf5; border-color: #10b981; color: #065f46; }
+        .alert-danger { background: #fef2f2; border-color: #ef4444; color: #991b1b; }
+        .footer { background: #1e293b; color: #e2e8f0; padding: 40px; margin-top: 60px; }
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer h3 { margin-bottom: 12px; color: white; }
+        .footer p { margin-bottom: 8px; }
+        .footer a { color: #60a5fa; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        .btn-primary:disabled { background: #94a3b8; cursor: not-allowed; }
+        .loading { display: inline-block; margin-left: 10px; color: #3b82f6; }
+        @media print {
+            .tier-banner, .tabs, .btn-secondary, .footer, .state-grid, .search-box, .form-section { display: none; }
+            .tab-content { display: block !important; padding: 20px; }
+            .output-area { border: 1px solid #000; background: white; }
+            body { background: white; }
+        }
+        @media (max-width: 768px) {
+            .tabs { flex-wrap: wrap; }
+            .tab { flex: 1 1 50%; min-width: 120px; font-size: 13px; padding: 14px 10px; }
+            .tab-content { padding: 24px 20px; }
+            .section-header { font-size: 1.6em; }
+            .state-grid { grid-template-columns: 1fr; }
+            .logo { width: 180px; }
+            .header h1 { font-size: 1.6em; }
+            .header { padding: 15px 20px; }
+            .strategy-box, .info-section, .form-section { padding: 20px; }
+            .btn { width: 100%; margin-bottom: 10px; }
+            .btn-secondary { margin-right: 0; }
+        }
+        @media (max-width: 480px) {
+            .tier-banner { font-size: 9px; padding: 8px 20px; }
+            .tab { font-size: 11px; padding: 12px 8px; }
+            .feature-badges { flex-direction: column; }
+            .feature-badge { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="tier-banner">★ PROFESSIONAL TIER ★</div>
+    <div class="header">
+        <div class="header-content">
+            <img src="https://myfairclaim.github.io/logo.png" alt="MyFairClaim - Professional Diminished Value Claims Service" class="logo">
+            <h1>Insurance Dispute Guide™</h1>
+            <p class="tagline">"When Negotiation Fails, Escalation Prevails."</p>
+            <div class="feature-badges">
+                <span class="feature-badge">🏛️ 50-State DOI Database</span>
+                <span class="feature-badge">⚖️ Small Claims Guidance</span>
+                <span class="feature-badge">📄 Complaint Generators</span>
+            </div>
+        </div>
+    </div>
+    <div class="tabs">
+        <button class="tab active" id="tab-strategy">📋 Dispute Strategy</button>
+        <button class="tab" id="tab-doi">🏛️ DOI Complaints</button>
+        <button class="tab" id="tab-smallclaims">⚖️ Small Claims</button>
+    </div>
+    <div id="content-strategy" class="tab-content active">
+        <h2 class="section-header">Dual-Track Dispute Strategy</h2>
+        <p class="section-subheader">When insurance companies deny or lowball your diminished value claim</p>
+        <div class="alert alert-danger"><strong>⚠️ You're Here Because:</strong> The insurance company has either (1) denied your claim, (2) offered an unreasonably low settlement, or (3) delayed beyond statutory timeframes. It's time to escalate.</div>
+        <div class="strategy-box">
+            <div class="strategy-title">🏛️ Track 1: Department of Insurance Complaint</div>
+            <div class="strategy-content">
+                <p><strong>What It Is:</strong> A formal regulatory complaint filed with your state's Department of Insurance (DOI) against the insurance company for improper claim handling.</p>
+                <p style="margin-top: 12px;"><strong>When to Use:</strong></p>
+                <ul>
+                    <li>Insurance company denies your professionally documented claim without valid reason</li>
+                    <li>They offer a settlement significantly below documented value without professional justification</li>
+                    <li>Delays exceed your state's statutory timeframe (typically 30 days)</li>
+                    <li>Bad faith tactics: recorded statement coercion, excessive documentation requests, comparative negligence claims after accepting 100% liability</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>Power of DOI Complaints:</strong></p>
+                <ul>
+                    <li><strong>Regulatory Pressure:</strong> Insurance companies are regulated entities and fear DOI scrutiny</li>
+                    <li><strong>Mandatory Response:</strong> Companies must respond to DOI complaints formally</li>
+                    <li><strong>Pattern Documentation:</strong> Your complaint becomes part of their regulatory record</li>
+                    <li><strong>Free to File:</strong> No cost, no lawyer required</li>
+                    <li><strong>Often Effective:</strong> Many insurers settle after DOI involvement to avoid regulatory issues</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>Timeline:</strong> DOI typically investigates within 30-60 days. Insurance company usually responds within 10-15 days of DOI inquiry.</p>
+            </div>
+        </div>
+        <div class="strategy-box">
+            <div class="strategy-title">⚖️ Track 2: Small Claims Court</div>
+            <div class="strategy-content">
+                <p><strong>What It Is:</strong> A lawsuit filed in small claims court to recover your diminished value. Small claims courts are designed for individuals without lawyers.</p>
+                <p style="margin-top: 12px;"><strong>When to Use:</strong></p>
+                <ul>
+                    <li>Your diminished value claim is within your state's small claims jurisdiction (typically $5,000-$15,000)</li>
+                    <li>DOI complaint doesn't resolve the issue</li>
+                    <li>You want legal judgment on the record</li>
+                    <li>Insurance company continues to deny or lowball after all other efforts</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>Advantages of Small Claims:</strong></p>
+                <ul>
+                    <li><strong>No Lawyer Required:</strong> Designed for self-representation</li>
+                    <li><strong>Low Filing Fees:</strong> Typically $30-$150</li>
+                    <li><strong>Fast Resolution:</strong> Hearing usually within 30-60 days</li>
+                    <li><strong>Simple Process:</strong> Informal procedures, judge hears both sides</li>
+                    <li><strong>Powerful Leverage:</strong> Insurers often settle before hearing to avoid court costs and precedent</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>Your Evidence:</strong> Your professional diminished value reports, repair documentation, and state law citations make a compelling case.</p>
+            </div>
+        </div>
+        <div class="strategy-box">
+            <div class="strategy-title">🎯 The Dual-Track Approach</div>
+            <div class="strategy-content">
+                <p><strong>Most Effective Strategy: Use BOTH simultaneously</strong></p>
+                <p style="margin-top: 12px;"><strong>Step 1:</strong> File DOI complaint (free, 30 minutes)</p>
+                <p><strong>Step 2:</strong> File small claims lawsuit (low cost, 1 hour)</p>
+                <p><strong>Step 3:</strong> Notify insurance company you've done both</p>
+                <p style="margin-top: 12px;"><strong>Why This Works:</strong> Insurance companies face pressure from two directions - regulatory scrutiny from DOI AND potential court judgment. Most settle to avoid both.</p>
+                <p style="margin-top: 12px;"><strong>Timeline:</strong></p>
+                <ul>
+                    <li><strong>Week 1:</strong> File DOI complaint and small claims</li>
+                    <li><strong>Week 2-3:</strong> Insurance company receives both notifications</li>
+                    <li><strong>Week 3-4:</strong> Many insurers settle at this point</li>
+                    <li><strong>Week 4-8:</strong> DOI investigates, small claims hearing scheduled</li>
+                    <li><strong>Result:</strong> Settlement or court judgment</li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert alert-success"><strong>🚀 Ready to Start?</strong> Click "🏛️ DOI Complaints" to select your state and generate your complaint, or "⚖️ Small Claims" to check your state's jurisdiction and generate your demand letter.</div>
+    </div>
+    <div id="content-doi" class="tab-content">
+        <h2 class="section-header">File Department of Insurance Complaint</h2>
+        <p class="section-subheader">Select your state to access DOI contact information and generate your complaint</p>
+        <div class="alert alert-info"><strong>How to Use:</strong> (1) Search for your state below, (2) Click your state card to view DOI contact info, (3) Generate your complaint letter.</div>
+        <input type="text" class="search-box" id="doiSearch" placeholder="🔍 Search by state name...">
+        <div id="doiGrid" class="state-grid"></div>
+        <div id="doiInfo" class="info-section">
+            <h3 id="doiStateTitle" style="color: #1e40af; margin-bottom: 20px; font-size: 1.8em;"></h3>
+            <div id="doiContactInfo" style="margin-bottom: 30px;"></div>
+            <h3 style="color: #1e40af; margin-bottom: 16px;">Generate Your DOI Complaint</h3>
+            <div class="form-section">
+                <div class="form-group">
+                    <label>Your Full Name *</label>
+                    <input type="text" id="doiYourName" placeholder="John Smith" maxlength="100" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label>Your Address *</label>
+                    <input type="text" id="doiYourAddress" placeholder="123 Main Street, City, State ZIP" maxlength="200" autocomplete="street-address">
+                </div>
+                <div class="form-group">
+                    <label>Your Phone *</label>
+                    <input type="tel" id="doiYourPhone" placeholder="(555) 123-4567" maxlength="20" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label>Your Email *</label>
+                    <input type="email" id="doiYourEmail" placeholder="john@email.com" maxlength="100" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label>Insurance Company *</label>
+                    <input type="text" id="doiInsuranceCompany" placeholder="State Farm" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label>Policy Number</label>
+                    <input type="text" id="doiPolicyNumber" placeholder="POL-123456" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label>Claim Number</label>
+                    <input type="text" id="doiClaimNumber" placeholder="CLM-123456" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label>Diminished Value Amount *</label>
+                    <input type="text" id="doiDVAmount" placeholder="$5,250" maxlength="20">
+                </div>
+                <div class="form-group">
+                    <label>Date Claim Submitted *</label>
+                    <input type="date" id="doiClaimDate">
+                </div>
+                <div class="form-group">
+                    <label>Brief Description of Problem *</label>
+                    <textarea id="doiProblem" placeholder="Describe the improper claim handling (e.g., 'Denied professionally documented claim without valid reason', 'Offered $1,500 against $5,250 documented value', 'Delayed 60 days beyond state requirement')" maxlength="1000"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="generateDOIComplaint()">📄 Generate DOI Complaint</button>
+            <div id="doiOutput" style="display: none; margin-top: 30px;">
+                <h3 style="color: #1e40af; margin-bottom: 16px;">Your DOI Complaint:</h3>
+                <div class="output-area" id="doiText"></div>
+                <button class="btn btn-secondary" onclick="copyText('doiText')">📋 Copy</button>
+                <button class="btn btn-secondary" onclick="downloadText('doiText', 'DOI_Complaint.txt')">💾 Download</button>
+            </div>
+        </div>
+    </div>
+    <div id="content-smallclaims" class="tab-content">
+        <h2 class="section-header">Small Claims Court Option</h2>
+        <p class="section-subheader">Check your state's small claims jurisdiction and generate your demand letter</p>
+        <div class="alert alert-warning"><strong>⚠️ Jurisdiction Check:</strong> Small claims courts have dollar limits. If your claim exceeds your state's limit, you may need to either (1) reduce claim to the limit, or (2) file in regular civil court with an attorney.</div>
+        <input type="text" class="search-box" id="scSearch" placeholder="🔍 Search by state name...">
+        <div id="scGrid" class="state-grid"></div>
+        <div id="scInfo" class="info-section">
+            <h3 id="scStateTitle" style="color: #1e40af; margin-bottom: 20px; font-size: 1.8em;"></h3>
+            <div id="scJurisdictionInfo" style="margin-bottom: 30px;"></div>
+            <h3 style="color: #1e40af; margin-bottom: 16px;">Generate Small Claims Demand Letter</h3>
+            <div class="alert alert-info"><strong>Required Before Filing:</strong> Most states require you send a demand letter before filing small claims. This letter serves as final notice.</div>
+            <div class="form-section">
+                <div class="form-group">
+                    <label>Your Full Name *</label>
+                    <input type="text" id="scYourName" placeholder="John Smith" maxlength="100" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label>Your Address *</label>
+                    <input type="text" id="scYourAddress" placeholder="123 Main Street, City, State ZIP" maxlength="200" autocomplete="street-address">
+                </div>
+                <div class="form-group">
+                    <label>Your Phone *</label>
+                    <input type="tel" id="scYourPhone" placeholder="(555) 123-4567" maxlength="20" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label>Your Email *</label>
+                    <input type="email" id="scYourEmail" placeholder="john@email.com" maxlength="100" autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label>Insurance Company *</label>
+                    <input type="text" id="scInsuranceCompany" placeholder="State Farm" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label>Insurance Company Address</label>
+                    <input type="text" id="scInsuranceAddress" placeholder="Claims Department Address" maxlength="200">
+                </div>
+                <div class="form-group">
+                    <label>Claim Number</label>
+                    <input type="text" id="scClaimNumber" placeholder="CLM-123456" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label>Diminished Value Amount *</label>
+                    <input type="text" id="scDVAmount" placeholder="$5,250" maxlength="20">
+                </div>
+                <div class="form-group">
+                    <label>Vehicle (Year Make Model) *</label>
+                    <input type="text" id="scVehicle" placeholder="2022 Toyota Camry" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label>VIN *</label>
+                    <input type="text" id="scVIN" placeholder="1HGBH41JXMN109186" maxlength="17">
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="generateSCDemand()">📄 Generate Small Claims Demand Letter</button>
+            <div id="scOutput" style="display: none; margin-top: 30px;">
+                <h3 style="color: #1e40af; margin-bottom: 16px;">Your Small Claims Demand Letter:</h3>
+                <div class="alert alert-warning"><strong>Next Step:</strong> Send this letter via USPS Certified Mail, Return Receipt. Keep the receipt - it proves you sent demand before filing suit.</div>
+                <div class="output-area" id="scText"></div>
+                <button class="btn btn-secondary" onclick="copyText('scText')">📋 Copy</button>
+                <button class="btn btn-secondary" onclick="downloadText('scText', 'Small_Claims_Demand.txt')">💾 Download</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <h3>Need Additional Support?</h3>
+            <p style="margin-bottom: 20px;">If you have questions or need help with your specific situation, our support team is here to assist you.</p>
+            <p><strong>Address:</strong> PO Box 125, Scottsdale, AZ 85257</p>
+            <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#e695939696899492a68b9f80878f94858a878f8bc885898b"><span class="__cf_email__" data-cfemail="8ffcfaffffe0fdfbcfe2f6e9eee6fdece3eee6e2a1ece0e2">[email&#160;protected]</span></a></p>
+            <p><strong>Phone:</strong> <a href="tel:8775033247">877-503-3247</a></p>
+            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #475569;">© 2024 MyFairClaim Professional. All rights reserved.</p>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const DOI_DATABASE={AL:{name:'Alabama',agency:'Alabama Department of Insurance',phone:'334-269-3550',website:'https://aldoi.gov',filing:'Online complaint form',limit:6000},AK:{name:'Alaska',agency:'Alaska Division of Insurance',phone:'907-269-7900',website:'https://commerce.alaska.gov/web/ins',filing:'Online or mail',limit:10000},AZ:{name:'Arizona',agency:'Arizona Department of Insurance',phone:'602-364-3100',website:'https://difi.az.gov',filing:'Online complaint portal',limit:3500},AR:{name:'Arkansas',agency:'Arkansas Insurance Department',phone:'501-371-2600',website:'https://insurance.arkansas.gov',filing:'Online or mail',limit:5000},CA:{name:'California',agency:'California Department of Insurance',phone:'800-927-4357',website:'https://insurance.ca.gov',filing:'Online complaint system',limit:12500},CO:{name:'Colorado',agency:'Colorado Division of Insurance',phone:'303-894-7490',website:'https://doi.colorado.gov',filing:'Online portal',limit:7500},CT:{name:'Connecticut',agency:'Connecticut Insurance Department',phone:'860-297-3900',website:'https://portal.ct.gov/cid',filing:'Online or mail',limit:5000},DE:{name:'Delaware',agency:'Delaware Department of Insurance',phone:'302-674-7300',website:'https://insurance.delaware.gov',filing:'Online complaint form',limit:15000},FL:{name:'Florida',agency:'Florida Department of Financial Services',phone:'877-693-5236',website:'https://myfloridacfo.com',filing:'Online complaint system',limit:8000},GA:{name:'Georgia',agency:'Georgia Office of Insurance & Safety Fire Commissioner',phone:'800-656-2298',website:'https://oci.georgia.gov',filing:'Online portal',limit:15000},HI:{name:'Hawaii',agency:'Hawaii Insurance Division',phone:'808-586-2790',website:'https://cca.hawaii.gov/ins',filing:'Online or mail',limit:5000},ID:{name:'Idaho',agency:'Idaho Department of Insurance',phone:'208-334-4250',website:'https://doi.idaho.gov',filing:'Online complaint form',limit:5000},IL:{name:'Illinois',agency:'Illinois Department of Insurance',phone:'312-814-2420',website:'https://insurance.illinois.gov',filing:'Online portal',limit:10000},IN:{name:'Indiana',agency:'Indiana Department of Insurance',phone:'317-232-2385',website:'https://in.gov/idoi',filing:'Online complaint system',limit:8000},IA:{name:'Iowa',agency:'Iowa Insurance Division',phone:'515-281-5705',website:'https://iid.iowa.gov',filing:'Online or mail',limit:6500},KS:{name:'Kansas',agency:'Kansas Insurance Department',phone:'785-296-3071',website:'https://insurance.kansas.gov',filing:'Online complaint form',limit:4000},KY:{name:'Kentucky',agency:'Kentucky Department of Insurance',phone:'502-564-3630',website:'https://insurance.ky.gov',filing:'Online portal',limit:2500},LA:{name:'Louisiana',agency:'Louisiana Department of Insurance',phone:'800-259-5300',website:'https://ldi.la.gov',filing:'Online complaint system',limit:5000},ME:{name:'Maine',agency:'Maine Bureau of Insurance',phone:'207-624-8475',website:'https://pfr.maine.gov/insurance',filing:'Online or mail',limit:6000},MD:{name:'Maryland',agency:'Maryland Insurance Administration',phone:'410-468-2000',website:'https://insurance.maryland.gov',filing:'Online complaint form',limit:5000},MA:{name:'Massachusetts',agency:'Massachusetts Division of Insurance',phone:'617-521-7794',website:'https://mass.gov/doi',filing:'Online portal',limit:7000},MI:{name:'Michigan',agency:'Michigan Department of Insurance',phone:'877-999-6442',website:'https://michigan.gov/difs',filing:'Online complaint system',limit:6500},MN:{name:'Minnesota',agency:'Minnesota Department of Commerce',phone:'651-539-1500',website:'https://mn.gov/commerce/insurance',filing:'Online or mail',limit:15000},MS:{name:'Mississippi',agency:'Mississippi Insurance Department',phone:'601-359-3569',website:'https://mid.ms.gov',filing:'Online complaint form',limit:3500},MO:{name:'Missouri',agency:'Missouri Department of Insurance',phone:'573-751-4126',website:'https://insurance.mo.gov',filing:'Online portal',limit:5000},MT:{name:'Montana',agency:'Montana Commissioner of Securities and Insurance',phone:'406-444-2040',website:'https://csi.mt.gov',filing:'Online or mail',limit:7000},NE:{name:'Nebraska',agency:'Nebraska Department of Insurance',phone:'402-471-2201',website:'https://doi.nebraska.gov',filing:'Online complaint form',limit:3600},NV:{name:'Nevada',agency:'Nevada Division of Insurance',phone:'775-687-0700',website:'https://doi.nv.gov',filing:'Online portal',limit:10000},NH:{name:'New Hampshire',agency:'New Hampshire Insurance Department',phone:'603-271-2261',website:'https://nh.gov/insurance',filing:'Online or mail',limit:10000},NJ:{name:'New Jersey',agency:'New Jersey Department of Banking and Insurance',phone:'609-292-7272',website:'https://njdobi.gov',filing:'Online complaint system',limit:5000},NM:{name:'New Mexico',agency:'New Mexico Office of Superintendent of Insurance',phone:'505-827-4601',website:'https://osi.state.nm.us',filing:'Online complaint form',limit:10000},NY:{name:'New York',agency:'New York Department of Financial Services',phone:'800-342-3736',website:'https://dfs.ny.gov',filing:'Online portal',limit:10000},NC:{name:'North Carolina',agency:'North Carolina Department of Insurance',phone:'919-807-6750',website:'https://ncdoi.gov',filing:'Online complaint system',limit:10000},ND:{name:'North Dakota',agency:'North Dakota Insurance Department',phone:'701-328-2440',website:'https://insurance.nd.gov',filing:'Online or mail',limit:15000},OH:{name:'Ohio',agency:'Ohio Department of Insurance',phone:'614-644-2658',website:'https://insurance.ohio.gov',filing:'Online complaint form',limit:6000},OK:{name:'Oklahoma',agency:'Oklahoma Insurance Department',phone:'405-521-2828',website:'https://oid.ok.gov',filing:'Online portal',limit:10000},OR:{name:'Oregon',agency:'Oregon Division of Financial Regulation',phone:'503-947-7984',website:'https://dfr.oregon.gov',filing:'Online complaint system',limit:10000},PA:{name:'Pennsylvania',agency:'Pennsylvania Insurance Department',phone:'717-787-2317',website:'https://insurance.pa.gov',filing:'Online or mail',limit:12000},RI:{name:'Rhode Island',agency:'Rhode Island Department of Business Regulation',phone:'401-462-9520',website:'https://dbr.ri.gov',filing:'Online complaint form',limit:2500},SC:{name:'South Carolina',agency:'South Carolina Department of Insurance',phone:'803-737-6160',website:'https://doi.sc.gov',filing:'Online portal',limit:7500},SD:{name:'South Dakota',agency:'South Dakota Division of Insurance',phone:'605-773-3563',website:'https://dlr.sd.gov/insurance',filing:'Online or mail',limit:12000},TN:{name:'Tennessee',agency:'Tennessee Department of Commerce & Insurance',phone:'615-741-2218',website:'https://tn.gov/commerce/insurance',filing:'Online complaint system',limit:25000},TX:{name:'Texas',agency:'Texas Department of Insurance',phone:'800-252-3439',website:'https://tdi.texas.gov',filing:'Online complaint form',limit:20000},UT:{name:'Utah',agency:'Utah Insurance Department',phone:'801-538-3800',website:'https://insurance.utah.gov',filing:'Online portal',limit:11000},VT:{name:'Vermont',agency:'Vermont Department of Financial Regulation',phone:'802-828-3301',website:'https://dfr.vermont.gov',filing:'Online or mail',limit:5000},VA:{name:'Virginia',agency:'Virginia Bureau of Insurance',phone:'804-371-9741',website:'https://scc.virginia.gov/pages/insurance',filing:'Online complaint system',limit:5000},WA:{name:'Washington',agency:'Washington Office of the Insurance Commissioner',phone:'360-725-7000',website:'https://insurance.wa.gov',filing:'Online complaint form',limit:10000},WV:{name:'West Virginia',agency:'West Virginia Offices of the Insurance Commissioner',phone:'304-558-3386',website:'https://wvinsurance.gov',filing:'Online portal',limit:10000},WI:{name:'Wisconsin',agency:'Wisconsin Office of the Commissioner of Insurance',phone:'608-266-3585',website:'https://oci.wi.gov',filing:'Online or mail',limit:10000},WY:{name:'Wyoming',agency:'Wyoming Department of Insurance',phone:'307-777-7401',website:'https://doi.wyo.gov',filing:'Online complaint form',limit:6000},DC:{name:'District of Columbia',agency:'DC Department of Insurance Securities and Banking',phone:'202-727-8000',website:'https://disb.dc.gov',filing:'Online portal',limit:10000}};
+let selectedDOIState=null;
+let selectedSCState=null;
+document.addEventListener('DOMContentLoaded',function(){setupTabs();loadDOIStates();loadSCStates();prefillFromURL();setTimeout(()=>{const firstEmpty=document.querySelector('#doiForm input:not([value])');if(firstEmpty)firstEmpty.focus();},100);console.log('Dispute Guide Ready - 51 jurisdictions loaded');});
+function setupTabs(){document.querySelectorAll('.tab').forEach(tab=>{tab.addEventListener('click',function(){const tabId=this.id.replace('tab-','');showTab(tabId);});});}
+function showTab(tabName){document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.getElementById('content-'+tabName).classList.add('active');document.getElementById('tab-'+tabName).classList.add('active');window.scrollTo(0,0);}
+function loadDOIStates(){const grid=document.getElementById('doiGrid');const sorted=Object.keys(DOI_DATABASE).sort((a,b)=>DOI_DATABASE[a].name.localeCompare(DOI_DATABASE[b].name));sorted.forEach(code=>{const state=DOI_DATABASE[code];const card=document.createElement('div');card.className='state-card';card.onclick=()=>selectDOIState(code);card.innerHTML=`<div class="state-name">${state.name}</div><div class="state-agency">${state.agency}</div><div class="state-details"><strong>Phone:</strong> ${state.phone}<br><strong>Filing:</strong> ${state.filing}</div>`;grid.appendChild(card);});document.getElementById('doiSearch').addEventListener('input',function(){const search=this.value.toLowerCase();document.querySelectorAll('#doiGrid .state-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(search)?'block':'none';});});}
+function selectDOIState(stateCode){selectedDOIState=stateCode;document.querySelectorAll('#doiGrid .state-card').forEach(card=>card.classList.remove('selected'));event.target.closest('.state-card').classList.add('selected');const state=DOI_DATABASE[stateCode];document.getElementById('doiStateTitle').textContent=state.name+' Department of Insurance';document.getElementById('doiContactInfo').innerHTML=`<div class="strategy-box"><strong>Agency:</strong> ${state.agency}<br><strong>Phone:</strong> ${state.phone}<br><strong>Website:</strong> <a href="${state.website}" target="_blank">${state.website}</a><br><strong>How to File:</strong> ${state.filing}<br><br><strong>📝 TIP:</strong> While most states offer online filing, we recommend also mailing a copy via certified mail to create a paper trail.</div>`;document.getElementById('doiInfo').classList.add('active');document.getElementById('doiInfo').scrollIntoView({behavior:'smooth'});}
+function loadSCStates(){const grid=document.getElementById('scGrid');const sorted=Object.keys(DOI_DATABASE).sort((a,b)=>DOI_DATABASE[a].name.localeCompare(DOI_DATABASE[b].name));sorted.forEach(code=>{const state=DOI_DATABASE[code];const card=document.createElement('div');card.className='state-card';card.onclick=()=>selectSCState(code);card.innerHTML=`<div class="state-name">${state.name}</div><div class="state-agency">Small Claims Limit: $${state.limit.toLocaleString()}</div><div class="state-details">Click to generate demand letter and view filing information</div>`;grid.appendChild(card);});document.getElementById('scSearch').addEventListener('input',function(){const search=this.value.toLowerCase();document.querySelectorAll('#scGrid .state-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(search)?'block':'none';});});}
+function selectSCState(stateCode){selectedSCState=stateCode;document.querySelectorAll('#scGrid .state-card').forEach(card=>card.classList.remove('selected'));event.target.closest('.state-card').classList.add('selected');const state=DOI_DATABASE[stateCode];const courtWebsite=`https://www.courts.${stateCode.toLowerCase()}.gov`;document.getElementById('scStateTitle').textContent=state.name+' Small Claims Court';document.getElementById('scJurisdictionInfo').innerHTML=`<div class="strategy-box"><strong>Small Claims Limit:</strong> $${state.limit.toLocaleString()}<br><strong>Your Claim Status:</strong> <span id="claimStatus">Enter your claim amount below to check if it's within jurisdiction</span><br><br><strong>Filing Information:</strong><br>• Filing Fee: Typically $30-$150 (varies by county)<br>• Where to File: County where you live or where defendant (insurance company) does business<br>• Process: Most ${state.name} courts have self-help forms available<br>• Court Website: <a href="${courtWebsite}" target="_blank">Search "${state.name} small claims court"</a><br><br><strong>📝 IMPORTANT:</strong> You must send a demand letter (generated below) before filing suit in most states. Send via certified mail and keep receipt.</div>`;document.getElementById('scInfo').classList.add('active');document.getElementById('scInfo').scrollIntoView({behavior:'smooth'});}
+function generateDOIComplaint(){if(!selectedDOIState){alert('Please select a state first');return;}const name=document.getElementById('doiYourName').value;const address=document.getElementById('doiYourAddress').value;const phone=document.getElementById('doiYourPhone').value;const email=document.getElementById('doiYourEmail').value;const insurance=document.getElementById('doiInsuranceCompany').value;const dvAmount=document.getElementById('doiDVAmount').value;const problem=document.getElementById('doiProblem').value;if(!name||!address||!phone||!email||!insurance||!dvAmount||!problem){alert('Please fill in all required fields');return;}const state=DOI_DATABASE[selectedDOIState];const today=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});const complaint=`${today}
+
+${state.agency}
+COMPLAINT SUBMISSION
+
+COMPLAINANT INFORMATION:
+Name: ${name}
+Address: ${address}
+Phone: ${phone}
+Email: ${email}
+
+INSURANCE COMPANY:
+Company: ${insurance}
+Policy Number: ${document.getElementById('doiPolicyNumber').value||'N/A'}
+Claim Number: ${document.getElementById('doiClaimNumber').value||'N/A'}
+
+COMPLAINT DETAILS:
+
+Nature of Complaint: IMPROPER HANDLING OF DIMINISHED VALUE CLAIM
+
+Date Claim Submitted: ${document.getElementById('doiClaimDate').value}
+
+Claim Amount: ${dvAmount}
+
+Description of Improper Conduct:
+${problem}
+
+VIOLATIONS ALLEGED:
+
+The insurance company has violated ${state.name} insurance regulations through the following improper claim handling practices:
+
+1. FAILURE TO CONDUCT REASONABLE INVESTIGATION
+My diminished value claim is supported by professional analysis from MyFairClaim including comprehensive market data and industry-standard valuation methodology. The insurance company has failed to conduct a reasonable investigation and has either denied or significantly undervalued my professionally documented claim without providing equivalent professional analysis.
+
+2. UNFAIR CLAIM SETTLEMENT PRACTICES
+The company's handling of this claim violates ${state.name} unfair claim settlement practice regulations, including ${state.name === 'Georgia' ? 'O.C.G.A. § 33-6-34' : state.name === 'California' ? 'Cal. Ins. Code § 790.03' : state.name === 'Florida' ? 'Fla. Stat. § 626.9541' : state.name === 'Texas' ? 'Tex. Ins. Code § 541.060' : 'applicable state insurance regulations'} by failing to promptly and fairly settle a claim that liability has become reasonably clear.
+
+3. FAILURE TO PROVIDE REASONABLE EXPLANATION
+The insurance company has failed to provide a reasonable explanation for denial or reduction of my professionally documented claim, or has provided explanations unsupported by professional analysis or market data.
+
+RELIEF REQUESTED:
+
+I request that the ${state.agency} investigate this complaint and take appropriate action including:
+
+1. Requiring the insurance company to properly investigate and settle this claim based on professional documentation provided
+2. Ordering payment of the full documented diminished value amount of ${dvAmount}
+3. Taking appropriate regulatory action against the company for improper claim handling
+4. Ensuring the company follows proper claim handling procedures
+
+SUPPORTING DOCUMENTATION:
+
+I have attached:
+• Enhanced Diminished Value Report from MyFairClaim
+• Vehicle Valuation Report
+• Correspondence with insurance company
+• Claim denial or inadequate settlement offer
+• All supporting evidence
+
+This complaint is submitted in good faith based on the facts stated above. I am available to provide additional information as needed.
+
+Respectfully submitted,
+
+${name}
+${phone}
+${email}
+
+cc: ${insurance} - Claims Department`;document.getElementById('doiText').textContent=complaint;document.getElementById('doiOutput').style.display='block';document.getElementById('doiOutput').scrollIntoView({behavior:'smooth'});}
+function generateSCDemand(){if(!selectedSCState){alert('Please select a state first');return;}const name=document.getElementById('scYourName').value;const address=document.getElementById('scYourAddress').value;const phone=document.getElementById('scYourPhone').value;const email=document.getElementById('scYourEmail').value;const insurance=document.getElementById('scInsuranceCompany').value;const dvAmount=document.getElementById('scDVAmount').value;const vehicle=document.getElementById('scVehicle').value;const vin=document.getElementById('scVIN').value;if(!name||!address||!phone||!email||!insurance||!dvAmount||!vehicle||!vin){alert('Please fill in all required fields');return;}const state=DOI_DATABASE[selectedSCState];const today=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});const demand=`${today}
+
+SENT VIA CERTIFIED MAIL, RETURN RECEIPT REQUESTED
+
+${name}
+${address}
+${phone}
+${email}
+
+${insurance}
+${document.getElementById('scInsuranceAddress').value||'Claims Department'}
+
+Re: FORMAL DEMAND BEFORE SMALL CLAIMS COURT ACTION
+    Claim Number: ${document.getElementById('scClaimNumber').value||'N/A'}
+    Vehicle: ${vehicle}
+    VIN: ${vin}
+
+Dear Claims Representative:
+
+This letter constitutes formal demand for payment of diminished value before I file suit in ${state.name} Small Claims Court.
+
+CLAIM SUMMARY
+
+On [ACCIDENT DATE], my vehicle sustained damage in an accident. Despite professional repairs, my vehicle has suffered permanent diminished value due to accident history being documented in vehicle history reports (Carfax/AutoCheck).
+
+PROFESSIONAL DOCUMENTATION
+
+My diminished value claim of ${dvAmount} is supported by professional analysis from MyFairClaim, which includes:
+
+• Enhanced Diminished Value Report with industry-standard calculation methodology
+• Vehicle Valuation Report analyzing comparable vehicle sales
+• Market data demonstrating buyer aversion to accident-damaged vehicles
+• Documentation of permanent stigma in automotive marketplace
+
+LEGAL BASIS
+
+Under ${state.name} law, I am entitled to recover the full diminished value of my vehicle as compensable property damage. Diminished value is the difference between the vehicle's fair market value before the accident and its fair market value after repairs.
+
+${state.name === 'Georgia' ? 'Georgia law explicitly recognizes diminished value recovery (Mabry v. State Farm, 274 Ga. 498 (2001)).' : state.name === 'California' ? 'California courts have consistently upheld diminished value claims (Cain v. State Farm, 62 Cal.App.4th 310 (1998)).' : state.name === 'North Carolina' ? 'North Carolina strongly supports diminished value recovery (Lawrence v. Fanning, 226 N.C. 235 (1946)).' : state.name === 'Kansas' ? 'Kansas Supreme Court has affirmed diminished value recovery (Montgomery v. Allstate, 282 Kan. 309 (2006)).' : 'Courts consistently recognize diminished value as compensable property damage separate from repair costs.'}
+
+YOUR INADEQUATE RESPONSE
+
+Your company has [CHOOSE: denied this professionally documented claim without valid reason / offered an inadequate settlement of $[AMOUNT] without professional justification / delayed resolution beyond statutory timeframes].
+
+This constitutes improper claim handling under ${state.name} insurance regulations.
+
+FINAL DEMAND
+
+I am demanding immediate payment of ${dvAmount} within 15 days of your receipt of this letter.
+
+If full payment is not received within 15 days, I will immediately:
+
+1. FILE SUIT in ${state.name} Small Claims Court seeking judgment for the full amount plus court costs and filing fees
+2. FILE COMPLAINT with the ${state.agency} for improper claim handling
+3. PURSUE all available legal remedies
+
+NOTICE OF INTENT TO SUE
+
+This letter serves as formal notice of my intent to file suit in Small Claims Court if this matter is not resolved. ${state.name} Small Claims Court has jurisdiction over claims up to $${state.limit.toLocaleString()}.
+
+I have attempted to resolve this matter through negotiation. Your company's refusal to pay the professionally documented diminished value leaves me no choice but to pursue legal action.
+
+SETTLEMENT OFFER
+
+To avoid litigation, I am willing to accept full payment of ${dvAmount} within 15 days. This offer expires on [15 DAYS FROM TODAY].
+
+After that date, I will file suit and seek court costs in addition to the diminished value amount.
+
+RESPONSE REQUIRED
+
+Respond within 15 days to:
+${name}
+${address}
+${email}
+${phone}
+
+Your failure to respond or pay within 15 days will result in immediate court filing.
+
+This is my final attempt to resolve this matter before legal action.
+
+Sincerely,
+
+${name}
+
+Enclosures:
+• Enhanced Diminished Value Report
+• Vehicle Valuation Report
+• Supporting documentation
+
+cc: ${state.agency} (for information)`;document.getElementById('scText').textContent=demand;document.getElementById('scOutput').style.display='block';document.getElementById('scOutput').scrollIntoView({behavior:'smooth'});}
+function copyText(elementId){const text=document.getElementById(elementId).textContent;navigator.clipboard.writeText(text).then(()=>{alert('✓ Copied to clipboard!');}).catch(()=>{alert('Copy failed. Select and copy manually.');});}
+function downloadText(elementId,filename){const text=document.getElementById(elementId).textContent;const blob=new Blob([text],{type:'text/plain'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url);}
+function prefillFromURL(){try{const params=new URLSearchParams(window.location.search);if(params.get('name')){const n=decodeURIComponent(params.get('name'));document.getElementById('doiYourName').value=n;document.getElementById('scYourName').value=n;}if(params.get('email')){const e=decodeURIComponent(params.get('email'));document.getElementById('doiYourEmail').value=e;document.getElementById('scYourEmail').value=e;}if(params.get('phone')){const p=decodeURIComponent(params.get('phone'));document.getElementById('doiYourPhone').value=p;document.getElementById('scYourPhone').value=p;}if(params.get('address')){const a=decodeURIComponent(params.get('address'));document.getElementById('doiYourAddress').value=a;document.getElementById('scYourAddress').value=a;}if(params.get('insurance')){const i=decodeURIComponent(params.get('insurance'));document.getElementById('doiInsuranceCompany').value=i;document.getElementById('scInsuranceCompany').value=i;}if(params.get('policy')){document.getElementById('doiPolicyNumber').value=decodeURIComponent(params.get('policy'));}if(params.get('claim')){const c=decodeURIComponent(params.get('claim'));document.getElementById('doiClaimNumber').value=c;document.getElementById('scClaimNumber').value=c;}if(params.get('amount')){const amt=decodeURIComponent(params.get('amount'));document.getElementById('doiDVAmount').value=amt;document.getElementById('scDVAmount').value=amt;}if(params.get('vehicle')){document.getElementById('scVehicle').value=decodeURIComponent(params.get('vehicle'));}if(params.get('vin')){document.getElementById('scVIN').value=decodeURIComponent(params.get('vin'));}if(params.get('state')){const st=params.get('state').toUpperCase();if(DOI_DATABASE[st]){selectedDOIState=st;selectedSCState=st;}}}catch(err){console.log('URL prefill error:',err);}}
+function copyText(elementId){const text=document.getElementById(elementId).textContent;const docType=elementId.includes('doi')?'DOI Complaint':'Small Claims Demand';navigator.clipboard.writeText(text).then(()=>{alert(`✅ ${docType} Copied!\n\nPaste into your email or word processor using Ctrl+V (Windows) or Cmd+V (Mac).`);}).catch(()=>{alert('❌ Copy failed. Please select the text manually and use Ctrl+C or Cmd+C.');});}
+function downloadText(elementId,filename){const text=document.getElementById(elementId).textContent;const blob=new Blob([text],{type:'text/plain'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url);alert(`✅ Downloaded as ${filename}!\n\nCheck your Downloads folder. You can open this file in any text editor or word processor.`);}
+    </script>
+</body>
+</html>
